@@ -4,6 +4,11 @@ import sys
 import os
 import re
 
+
+def decorate_message(dec,message):
+	line_dec = dec*len(message)
+	print("\n{}\n{}\n{}\n".format(line_dec,message,line_dec))
+
 # stackoverflow link with answer for coloring:
 # http://stackoverflow.com/questions/37340049/how-do-i-print-colored-output-to-the-terminal-in-python
 # ----- colors ---------
@@ -33,13 +38,9 @@ parentContents = os.listdir(parentDir)
 hiddenFiles = re.compile('^\.')
 
 sys.stdout.write(REVERSE + GREEN)
-message1 = "Creating static html files in parent directory:"
-linebreak = "="*len(message1)
-print("\n")
-print(linebreak)
-print(message1)
-print(linebreak)
-print("\n")
+message1, line_dec = "Creating static html files in parent directory:", "="
+decorate_message(line_dec,message1)
+
 sys.stdout.write(RESET)
 
 
