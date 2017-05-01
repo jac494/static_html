@@ -33,13 +33,16 @@ parentContents = os.listdir(parentDir)
 hiddenFiles = re.compile('^\.')
 
 sys.stdout.write(REVERSE + GREEN)
+message1 = "Creating static html files in parent directory:"
+linebreak = "="*len(message1)
 print("\n")
-print("=================================================")
-print("Creating static html files in parent directory...")
-print("=================================================")
+print(linebreak)
+print(message1)
+print(linebreak)
 print("\n")
-
 sys.stdout.write(RESET)
+
+
 for file in contents:
     if file in special_files or hiddenFiles.match(file):
         sys.stdout.write(BOLD)
