@@ -1,6 +1,6 @@
 # Static HTML Build Script
 
-###Description
+### Description
 Create a  static HTML design template to outline a project by merging all files with \
 a `.html` extension  with a preconfigured header and footer to allow you to focus on \
  a modular build of static templates for outlining projects.
@@ -17,7 +17,7 @@ a `.html` extension  with a preconfigured header and footer to allow you to focu
         *  header.html
         *  footer.html
 ```
-###Project file structure
+### Project file structure
 ```
 * /path/to/projectName
     *  /config
@@ -31,7 +31,7 @@ ARGS: specific files you want to merge. \
 If you do not specify any arguments it merges all HTML files with your header and footer HTML. \ 
 This 
 
-###Open Source License
+### Open Source License
 MIT License
 
 Copyright (c) 2017 
