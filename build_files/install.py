@@ -33,7 +33,7 @@ if __name__ == '__main__':
 					copyfile(install_path+file,SUB_PATH+file)
 	except Exception as e:
 		raise e
-
+"""
 	user = os.getlogin()
 	alias_merge = "alias merge-static='python3 /home/{}/.buildscripts/config/merge.py'\n".format(user)
 	alias_build = "alias build-static='python3 /home/{}/.buildscripts/config/buildscript.py'\n".format(user)
@@ -42,4 +42,4 @@ if __name__ == '__main__':
 	with open('/home/{}/.bashrc'.format(os.getlogin()), 'a') as bash:
 		bash.write(alias_merge)
 		bash.write(alias_build)
-
+"""

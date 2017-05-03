@@ -1,7 +1,6 @@
 import re
 
-from shutil import copyfile
-from .content_functions import warning_message,creating_message
+from build_files.config.content_functions import warning_message, creating_message
 
 MESSAGES = {"WARNING" : "WARNING: FILE {} MISSING. EXITING.",
 			"CHECKING": "Checking current directory for minimum build files...",
