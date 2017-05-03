@@ -1,40 +1,6 @@
-# Static HTML Build Script
-
-### Description
-Create a  static HTML design template to outline a project by merging all files with \
-a `.html` extension  with a preconfigured header and footer to allow you to focus on \
- a modular build of static templates for outlining projects.
-
-### Installation
-* Download the tar.gz file and run `install.py`.
-* This creates the File System Structure(defined below) and an alias named `merge`.
-* The merge alias allows for `merge.py` to run on your project dir.
-
-### File system structure
-```
-* ~/.buidconfig
-    *  /config
-        *  header.html
-        *  footer.html
-```
-### Project file structure
-```
-* /path/to/projectName
-    *  /config
-        *  header.html
-        *  footer.html
-
-```
-### How To Run
-`user@domain$  merge $ARGS`\
-ARGS: specific files you want to merge. \
-If you do not specify any arguments it merges all HTML files with your header and footer HTML. \ 
-This 
-
-### Open Source License
 MIT License
 
-Copyright (c) 2017 
+Copyright (c) 2017 Gerald Wells
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
